@@ -6,8 +6,45 @@
 
 html{
     --standart-font: 'Kumbh Sans', sans-serif;
+    --card-bg: ghostwhite;
+    
 }
 body{
     font-family: var(--standart-font);
-    background-color: rgba(156, 65, 241, 0.842);
+    background-color: rgba(98, 42, 167, 0.842);
+    height: 100vh;
+    position: relative;
+}
+
+/* Card ========================================= */
+.card-container{
+    background-color: var(--card-bg);
+    
+    
+
+    width: 90vw;
+    height: 30vh;
+    margin-left: 5vw;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+.header{
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: -32%;
+
+}
+.header img{
+    margin-left: -1.3rem;
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
 }
