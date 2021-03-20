@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --standart-font: 'Kumbh Sans', sans-serif;
+}
+body{
+    font-family: var(--standart-font);
+    background-color: rgba(156, 65, 241, 0.842);
+}
