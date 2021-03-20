@@ -8,6 +8,9 @@ html{
     --standart-font: 'Kumbh Sans', sans-serif;
     --card-bg: ghostwhite;
     --bold-text: hsl(237, 12%, 33%);
+    --question-text: hsl(238, 29%, 16%);
+    --answer-text: hsl(237, 12%, 33%);
+    --divider: hsl(240, 5%, 91%);
     
 }
 body{
@@ -16,10 +19,19 @@ body{
     height: 100vh;
     position: relative;
 }
+/* Divider ========================================= */
+.divider{
+    content: '';
+    border: 1px solid var(--divider);
+    margin-top: .8rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    width: 90%;
 
+}
 /* Card ========================================= */
 .card-container{
-    background-color: var(--card-bg) ;
+    background-color: var(--card-bg);
     
     width: 90vw;
     
@@ -29,7 +41,10 @@ body{
     justify-content: center;
 
     flex-wrap: wrap;
+
+    border-radius: 2rem;
 }
+/* Card Header ========================================= */
 .header{
     background-image: url(images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
@@ -49,9 +64,32 @@ body{
 
     color: var(--bold-text);
 
-    margin-top: 2rem;
+    margin-top: .2rem;
     margin-bottom: 2.5rem;
 }
+/* Question and Answer ===================================== */
+.question-answer{
+    width: 100%;
+    
+}
+.question{
+    padding: .2rem 0 .2rem 1rem;
+    
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.question img{
+    float: right;
+    margin-top: 3px;
+    margin-right: 12px;
+}
+.answer{
+    padding: .5rem 2rem .2rem 1rem;
+    color: var(--answer-text);
+    font-size: .9rem;
+}
+
 .attribution {
     position: absolute;
     bottom: 0;
