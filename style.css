@@ -7,6 +7,7 @@
 html{
     --standart-font: 'Kumbh Sans', sans-serif;
     --card-bg: ghostwhite;
+    --bold-text: hsl(237, 12%, 33%);
     
 }
 body{
@@ -18,12 +19,10 @@ body{
 
 /* Card ========================================= */
 .card-container{
-    background-color: var(--card-bg);
+    background-color: var(--card-bg) ;
     
-    
-
     width: 90vw;
-    height: 30vh;
+    
     margin-left: 5vw;
     margin-top: 20vh;
     display: flex;
@@ -34,15 +33,24 @@ body{
 .header{
     background-image: url(images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
-    background-position: 50% 45%;
+    background-position: 50px 100px;
+    
     width: 100%;
-    border: 2px solid black;
     text-align: center;
-    margin-top: -32%;
+    margin-top: -110px;
 
 }
 .header img{
     margin-left: -1.3rem;
+}
+.header h2{
+    font-weight: 700;
+    font-size: 2rem;
+
+    color: var(--bold-text);
+
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
 }
 .attribution {
     position: absolute;
