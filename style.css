@@ -29,8 +29,8 @@ body{
     border: 1px solid var(--divider);
     margin-top: .8rem;
     margin-bottom: .5rem;
-    margin-left: 5%;
-    width: 90%;
+
+    width: 100%;
 }
 /* Card ========================================= */
 .card-container{
@@ -51,9 +51,9 @@ body{
 .header{
     background-image: url(images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
-    background-position: 50px 100px;
+    background-position: center 100px;
     
-    width: 100%;
+    
     text-align: center;
     margin-top: -110px;
 
@@ -72,28 +72,58 @@ body{
 }
 /* Question and Answer ===================================== */
 .question-answer{
-    width: 100%;
-    padding-bottom: 1rem;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-bottom: 1.9rem;
 }
+/* Questions ===================================== */
 .question{
-    padding: .2rem 0 .2rem 1rem;
-    
-    font-size: 1rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: .9rem;
+    color: var(--question-text);
     font-weight: 400;
 
+    transition-property: font-weight;
+    transition: .3s ease-in;
+    outline: none;
 }
 .question img{
-    float: right;
-    margin-top: 3px;
-    margin-right: 12px;
-
+    transition: transform .3s ease ;
 }
+/* Answer ===================================== */
 .answer{
-    padding: .5rem 2rem .2rem 1rem;
-    color: var(--answer-text);
-    font-size: .9rem;
+    margin-top: 1rem;
+    text-align: left;
+    line-height: 1rem;
+    width: 90%;
+    font-size: .8rem;
+    opacity: 0;
+    display: none;
+    transition-property: opacity;
+    transition:  1s step-end;
 }
-
+/* Checkbox ===================================== */
+.wrapper {
+    visibility: hidden;
+}
+.wrapper:checked + .question {
+    font-weight: 700;
+}
+.wrapper:checked + .question  img{
+    transform: rotate(180deg);
+}
+.wrapper:checked + .question + .answer{
+    opacity: 1;
+    display: block;
+}  
 .attribution {
     padding: 1rem;
     width: 100%;
