@@ -63,9 +63,7 @@ body{
     content: url(images/illustration-woman-online-mobile.svg);
     margin-left: -1.3rem;
 }
-.header img#box{
-    display: none;
-}
+
 h2{
     display: block;
     font-weight: 700;
@@ -143,12 +141,44 @@ h2{
 }
 @media (min-width: 1000px){
 
-    .header img#main{
-        content: url(images/illustration-woman-online-desktop.svg);
+    .card-container{
+        width: 70vw;
+        min-height: 60vh;
+        margin-top: 10vh;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 10% 10% 70% 10%;
+        grid-gap: 5px;
+
     }
-    .header img#box{
-        display: inline;
+    .header{
+        background: url(images/illustration-woman-online-desktop.svg) no-repeat;
+        background-position: -80px center, right -70px;
+        padding: 0;
+        margin-top: 0;
+        grid-column: 1/1;
+        grid-row: 1/5;
+        position: relative;
+    }
+    
+    .header img#main{
         content: url(images/illustration-box-desktop.svg);
+        position: absolute;
+        left: -80px;
+        top: max(40%, 10vh);
+    }
+    h2{
+        width: 80%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: left;
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+    .content{
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
 
 }
