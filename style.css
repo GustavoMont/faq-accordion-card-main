@@ -157,7 +157,7 @@ h2{
         min-height: 500px;
 
         padding: 0;
-        margin-top: 2rem;
+        margin-top: 3rem;
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-rows: 10% 10% 70% 10%;
