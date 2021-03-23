@@ -148,25 +148,27 @@ h2{
     bottom: 0;
 }
 @media (min-width: 1140px){
-
+    body{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
     .card-container{
         width: 950px;
         min-height: 500px;
 
         padding: 0;
-        
+        margin-top: 2rem;
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-rows: 10% 10% 70% 10%;
         grid-gap: 5px;
         
         justify-content: center;
-        
     }
     .header{
         background: url(images/illustration-woman-online-desktop.svg) no-repeat, url(images/bg-pattern-desktop.svg) no-repeat;
         background-position: -80px center, -120px bottom;
-        background-size: 25rem, 32rem;
+        background-size: 31rem, 35rem;
         float: left;
         grid-column: 1/1;
         grid-row: 3/3;
@@ -184,7 +186,7 @@ h2{
         grid-column: 2/3;
         grid-row: 1/2;
         text-align: left;
-        margin-left: 80px;
+        margin-left: 30px;
         margin-top: 50px;
     }
     .content{
