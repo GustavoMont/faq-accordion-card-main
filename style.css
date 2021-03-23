@@ -23,8 +23,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
+
 /* Divider ========================================= */
 .divider{
     content: '';
@@ -77,13 +77,17 @@ h2{
     margin-bottom: 1.5rem;
 }
 /* Question and Answer ===================================== */
+.content{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
 .question-answer{
     width: 90%;
     margin-left: 5%;
     display: flex;
     flex-wrap: wrap;
-
-    padding-bottom: 1.9rem;
+    /* padding-top: 2.5rem;
+    padding-bottom: 2.5rem; */
 }
 /* Questions ===================================== */
 .question{
@@ -120,7 +124,8 @@ h2{
 }
 /* Checkbox ===================================== */
 .wrapper {
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
 }
 .wrapper:checked + .question {
     font-weight: 700;
@@ -142,12 +147,12 @@ h2{
     position: absolute;
     bottom: 0;
 }
-@media (min-width: 1440px){
+@media (min-width: 1140px){
 
     .card-container{
-        width: 900px;
-        min-height: 380px;
-        margin-top: 10vh;
+        width: 950px;
+        min-height: 420px;
+        margin-top: 10%;
         padding: 0;
         display: grid;
         grid-template-columns: 45% 55%;
@@ -183,6 +188,10 @@ h2{
     .content{
         grid-column: 2/3;
         grid-row: 3/4;
+        /* border: 2px solid black; */
+        align-items: center;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 
 }
