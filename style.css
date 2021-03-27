@@ -125,7 +125,6 @@ h2{
 /* Checkbox ===================================== */
 .wrapper {
     display: none;
-    /* visibility: hidden; */
 }
 .wrapper:checked + .question {
     font-weight: 700;

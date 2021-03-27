@@ -16,9 +16,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
-
-
+  
 
 ## Overview
 
@@ -48,67 +46,67 @@ Users should be able to:
 - Live Site URL: [See by yourself 🤓👀](https://gustavomont.github.io/faq-accordion-card-main/)
 
 ## My process
+  When I started the challenge I didn't have no idea if it would be difficult for me or not, but I knew that I'd finish it 🧐😼. And I saw that it have a bonus challenge: don't use JS 🤔😲. And I tried it 🧐.
+  
+    First I had some problem's about footer position. I solved it when I search, and discovered if I use position and display flex it'd be on bottom ever. So first problem solved 😎.
+
+    Another problem was background position in desktop and mobile design 😑😑. I think I solved better in mobile design 📱, in desktop design 💻, sadly, it have a little problem that it still change position while the card container get longer, I accept sugestion to make it better 😁.
+
+    I already have use ✅ checkbox to do some different things like: a modal and a reponsive menu, so I just had to search how to use it for a wrapper, without use JS, only using CSS 🤓. Acctually, was one of things I do that felt most proud about 😄😎. 
+
+    The last problem would be change the images when the width screen get longer, and without use JS, AGAIN 🤦🏽‍♂️🤦🏽‍♂️. But with 5 minutes of searching 🔍, I discovered that it's just use 'content: ' property on css. So I used it, and I get change image 😎. Image is right but not its position 🤦🏽‍♂️. And I used 'display: grid' on card-container and after some tests I got finish the desktop design. 
+
+    In this challenge I could pratice several css skills and I'm so happy to finish it. 😎😁
+
 
 ### Built with
 
-- Semantic HTML5 markup
+- Semantic HTML5 markup 
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
+  
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+  I learned so much about the CSS power 🤯🤯. The 'content: ' property and about use CSS grid. My mind just blowing using it. Change the html items place independently of its position in html source 🤯🤓. 
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+  <div class="card-container">
+      <div class="header">
+        <img src alt="Logo" id="main">
+      </div>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* I really like this */
+.wrapper {
+    display: none;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.wrapper:checked + .question {
+    font-weight: 700;
 }
+.wrapper:checked + .question  img{
+    transform: rotate(180deg);
+}
+.wrapper:checked + .question + .answer{
+    opacity: 1;
+    display: block;
+} 
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I want to pratice more about CSS Grid and try to make the designs more responsive.  I really need to pratice it I know that it's so important !!!
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [About change image whithou JS](https://www.example.com) - This helped me for change image src without JS, and I thinked better use it for responsive than use JS. I really liked this property and will use it going forward
+- [CSS GRID](https://www.example.com) - This is an amazing video, it's in portuguese, and helped me so much about the CSS GRID. I'd recommend it to anyone still learning this concept.  
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@GustMont](https://www.frontendmentor.io/profile/yourusername)
+- Instagram - [@gust_mont](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
