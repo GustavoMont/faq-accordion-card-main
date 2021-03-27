@@ -204,7 +204,8 @@ h2{
     }
     .attribution {
         height: 1vh;
-        width: 100vw;
+        width: 90vw;
+        border-radius: .5rem;
         display: flex;
         background: var(--card-bg);
         line-height: 1rem;
