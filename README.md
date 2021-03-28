@@ -100,13 +100,13 @@ I want to pratice more about CSS Grid and try to make the designs more responsiv
 
 ### Useful resources
 
-- [About change image whithou JS](https://www.example.com) - This helped me for change image src without JS, and I thinked better use it for responsive than use JS. I really liked this property and will use it going forward
-- [CSS GRID](https://www.example.com) - This is an amazing video, it's in portuguese, and helped me so much about the CSS GRID. I'd recommend it to anyone still learning this concept.  
+- [About change image whithou JS](https://stackoverflow.com/questions/18032220/css-change-image-src-on-imghover) - This helped me for change image src without JS, and I thinked better use it for responsive than use JS. I really liked this property and will use it going forward
+- [CSS GRID](https://www.youtube.com/watch?v=HN1UjzRSdBk&t=1836s) - This is an amazing video, it's in portuguese, and helped me so much about the CSS GRID. I'd recommend it to anyone still learning this concept.  
 
 ## Author
 
-- Frontend Mentor - [@GustMont](https://www.frontendmentor.io/profile/yourusername)
-- Instagram - [@gust_mont](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@GustavoMont](https://www.frontendmentor.io/profile/GustavoMont)
+- Instagram - [@gust_mont](https://www.instagram.com/gust_mont/)
 
 
 
